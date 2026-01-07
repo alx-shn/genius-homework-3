@@ -342,15 +342,17 @@ a {
   padding-bottom: 48px;
 }
 
-.procedure-title span {
-  color: var(--color-primary-blue);
-}
+
 .procedure-title {
   font-family: 'Play', sans-serif;
   text-align: center;
   font-weight: 700;
   font-size: 64px;
   margin-bottom: 48px;
+}
+
+.procedure-title span {
+  color: var(--color-primary-blue);
 }
 
 .procedure-list {
@@ -386,6 +388,27 @@ a {
     var(--color-primary-dark-blue) 99.06%
   );
 }
+
+.procedure-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.procedure-text {
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.18;
+  font-style: normal;
+  color: var(--color-primary-white);
+  margin: 0 auto;
+}
+
 
 /*Carousel*/
 .carousel-button {
@@ -662,4 +685,5 @@ a {
   text-underline-offset: 2px;
   text-decoration: underline;
 }
+
 

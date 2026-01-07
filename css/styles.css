@@ -84,11 +84,9 @@ p {
 
 a {
   display: inline-block;
-}
-
-a {
   text-decoration: none;
 }
+
 
 
 .container {
@@ -116,6 +114,8 @@ a {
   width: 219px;
   height: 53px;
   margin-bottom: 14px;
+   cursor: pointer;
+  transition-duration: 0.2s;
 }
 
 .button:hover {
@@ -694,6 +694,7 @@ a {
   text-underline-offset: 2px;
   text-decoration: underline;
 }
+
 
 
 

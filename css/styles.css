@@ -39,6 +39,7 @@
 }
 :root {
   --color-primary-blue: #2b7fff;
+
   --color-primary-white: #fff;
   --color-primary-dark-blue: #011c44;
   --color-secondary-light-gray: #747272;
@@ -87,8 +88,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .container {
   width: 100%;
   max-width: 1288px;
@@ -114,7 +113,7 @@ a {
   width: 219px;
   height: 53px;
   margin-bottom: 14px;
-   cursor: pointer;
+  cursor: pointer;
   transition-duration: 0.2s;
 }
 
@@ -179,6 +178,7 @@ a {
 
 .hero-section {
   background-image: url('../images/hero-section-background.png');
+
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -220,9 +220,9 @@ a {
 }
 
 .transformation-container {
-  position: relative;
   display: flex;
   gap: 32px;
+  position: relative;
 }
 
 .transformation-stars {
@@ -230,21 +230,23 @@ a {
 }
 
 .star1 {
-  top: 330px;
-  right: 291px;
+  top: 336px;
+  right: 294px;
   fill: var(--color-secondary-dark-blue);
 }
 
 .star2 {
-  top: -19px;
-  right: -19px;
+  top: -1px;
+  right: 0px;
   fill: var(--color-primary-blue);
 }
+
 .star3 {
-  top: 263px;
-  right: 14px;
+  top: 269px;
+  right: 6px;
   fill: var(--color-secondary-light-gray);
 }
+
 .transformation-images1 {
   border-radius: 50%;
 }
@@ -273,14 +275,13 @@ a {
   max-width: 709px;
 }
 
-.transformation-no-margin {
-  margin-bottom: 0;
-}
-
-
 .bolt {
   font-weight: 700;
   text-transform: capitalize;
+}
+
+.transformation-no-margin {
+  margin-bottom: 0;
 }
 
 /*choose*/
@@ -351,7 +352,6 @@ a {
   padding-bottom: 48px;
 }
 
-
 .procedure-title {
   font-family: 'Play', sans-serif;
   text-align: center;
@@ -418,7 +418,6 @@ a {
   margin: 0 auto;
 }
 
-
 /*Carousel*/
 .carousel-button {
   display: flex;
@@ -444,7 +443,7 @@ a {
   transform: rotate(180deg);
 }
 
-/*contacts*/
+/*Contacts*/
 
 .contact-container {
   display: flex;
@@ -469,13 +468,29 @@ a {
   color: var(--color-primary-blue);
 }
 
+.contact-subtitle {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  max-width: 276px;
+  margin: 0 auto 32px;
+  color: var(--color-primary-white);
+}
+
+.contact-subtitle span {
+  color: var(--color-primary-blue);
+}
+
+.contact-field {
+  margin-bottom: 16px;
+}
+
 .contact-form {
   border-radius: 32px;
   width: 100%;
   max-width: 423px;
   height: 100%;
   max-height: 481px;
-
   line-height: 1.18;
   padding: 48px 56px;
   background-image: url('../images/modal-background.png');
@@ -530,6 +545,7 @@ a {
   color: var(--color-primary-white);
   margin-bottom: 16px;
 }
+
 .address-copyright {
   color: var(--color-secondary-light-gray);
   font-size: 13px;
@@ -614,10 +630,10 @@ a {
 .form-input {
   color: var(--color-primary-white);
   padding: 18px 33px;
-    width: 310px;
+  width: 310px;
   font-size: 13px;
   line-height: 1.15;
-   display: block;
+  display: block;
   margin: 0 auto;
   height: 52px;
   border: 2px solid var(--color-secondary-light-gray);
@@ -643,7 +659,7 @@ a {
   height: 53px;
   font-weight: 600;
   font-size: 18px;
-  margin-bottom: 8px;
+
   border: 2px solid var(--color-primary-blue);
   border-radius: 32px;
   background-color: var(--color-primary-blue);
@@ -683,7 +699,6 @@ a {
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
-  line-height: 1.5;
   margin: 0 auto;
   max-width: 213px;
   color: var(--color-secondary-light-gray);
@@ -694,7 +709,3 @@ a {
   text-underline-offset: 2px;
   text-decoration: underline;
 }
-
-
-
-

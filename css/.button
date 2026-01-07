@@ -90,9 +90,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
 
 .container {
   width: 100%;
@@ -177,15 +174,7 @@ button {
 /*Hero*/
 
 .hero-section {
-  background-image: linear-gradient(
-      94deg,
-      #fff 9.65%,
-      rgba(255, 255, 255, 0.85) 26.08%,
-      rgba(255, 255, 255, 0.19) 52.74%,
-      rgba(255, 255, 255, 0) 74.46%
-    ),
-    url('../images/hero-section-background.jpg');
-
+  background-image: url('../images/hero-section-background.png');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -372,22 +361,30 @@ button {
   font-size: 22px;
 }
 
-.procedure-item {
-  color: var(--color-primary-white);
-  font-size: 18px;
-  line-height: 1.1;
-  padding: 372px 77px 32px 115px;
+.procedure-card {
+  transition: transform 0.3s;
+}
+
+.procedure-card:hover {
+  transform: scale(1.05);
+}
+
+.procedure-card-container {
+  position: relative;
+  width: 344px;
+  height: 456px;
+  padding: 32px 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 4px 120px;
   background-image: linear-gradient(
     180deg,
     rgba(1, 28, 68, 0) 47.4%,
     rgba(1, 28, 68, 0.73) 82.66%,
     var(--color-primary-dark-blue) 99.06%
   );
-  transition: transform 0.3s;
-}
-
-.procedure-item:hover {
-  transform: scale(1.05);
 }
 
 /*Carousel*/
@@ -487,31 +484,7 @@ button {
 
 .footer-container {
   display: flex;
-  gap: 20px;
-}
-
-.footer-nav {
-  display: flex;
-  flex-basis: 50%;
-  gap: 20px;
-}
-
-.footer-address {
-  display: flex;
-  flex-basis: 50%;
-  gap: 20px;
-}
-
-.footer-logo {
-  flex-basis: 50%;
-}
-
-.footer-menu {
-  flex-basis: 50%;
-}
-
-.address-list {
-  flex-basis: 50%;
+  justify-content: space-between;
 }
 
 .footer-icons {
@@ -524,10 +497,6 @@ button {
 .footer-link {
   color: var(--color-primary-white);
   margin-bottom: 16px;
-}
-
-.address-info {
-  flex-basis: 50%;
 }
 .address-copyright {
   color: var(--color-secondary-light-gray);
@@ -569,8 +538,26 @@ button {
 
 .modal-btn-close {
   position: absolute;
-  top: 42px;
-  right: 42px;
+  top: 50px;
+  right: 50px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  transform: scale(0.8);
+  transition-duration: 0.2s;
+}
+
+.modal-btn-close:active {
+  transform: scale(0.8) translateY(1px);
+}
+
+.icon-x {
+  stroke: var(--color-primary-white);
 }
 
 /*Form*/
@@ -595,9 +582,12 @@ button {
 .form-input {
   color: var(--color-primary-white);
   padding: 18px 33px;
-  width: 100%;
+    width: 310px;
   font-size: 13px;
   line-height: 1.15;
+   display: block;
+  margin: 0 auto;
+  height: 52px;
   border: 2px solid var(--color-secondary-light-gray);
   border-radius: 32px;
   background-color: transparent;
@@ -617,7 +607,6 @@ button {
 .form-button {
   display: block;
   margin: 0 auto 8px;
-  padding: 16px 32px;
   width: 281px;
   height: 53px;
   font-weight: 600;
@@ -631,6 +620,7 @@ button {
 
 .form-button:hover {
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-white);
 }
 
 .form-title {
@@ -652,7 +642,8 @@ button {
   font-size: 22px;
   text-align: center;
   line-height: 1.18;
-  margin-bottom: 32px;
+  max-width: 276px;
+  margin: 0 auto 32px auto;
   color: var(--color-primary-white);
 }
 
@@ -671,3 +662,4 @@ button {
   text-underline-offset: 2px;
   text-decoration: underline;
 }
+

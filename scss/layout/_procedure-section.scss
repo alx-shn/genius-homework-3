@@ -1,0 +1,43 @@
+.procedure-section {
+  padding-bottom: 64px;
+
+  @media screen and (min-width: $br-desktop) {
+    padding-bottom: 96px;
+  }
+
+  &__swiper-container {
+    overflow: hidden;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__title {
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $br-desktop) {
+      font-weight: 700;
+      font-size: 64px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $br-tablet) {
+      display: flex;
+    }
+  }
+}

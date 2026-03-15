@@ -1,0 +1,107 @@
+.hero-section {
+  background-image:
+    linear-gradient(
+      38deg,
+      #fff 0%,
+      rgba(255, 255, 255, 0.78) 31.23%,
+      rgba(255, 255, 255, 0.2) 50.39%,
+      rgba(255, 255, 255, 0) 68.37%
+    ),
+    url('../images/hero-section-background.png');
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 71px 20px;
+
+  @media screen and (min-width: $br-desktop) {
+    background-image: url('../images/hero-section-background.png');
+    padding: 123px 0 126px 0;
+  }
+
+  &__text {
+    margin: auto;
+
+    @media screen and (min-width: $br-desktop) {
+      margin-left: 106px;
+      max-width: 529px;
+    }
+  }
+
+  &__container {
+    padding: 71px 20px;
+
+    @media screen and (min-width: $br-desktop) {
+      padding: 0;
+    }
+  }
+
+  &__pretitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+
+    @media screen and (min-width: $br-desktop) {
+      font-size: 18px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    font-family: 'Play', sans-serif;
+    color: var(--color-primary-blue);
+    text-transform: capitalize;
+
+    max-width: 100%;
+    font-size: 54px;
+    line-height: 0.8;
+    margin-bottom: 32px;
+    text-align: center;
+
+    @media screen and (min-width: $br-desktop) {
+      max-width: 529px;
+      font-size: 140px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    color: var(--color-secondary-dark);
+
+    max-width: 186px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.64;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: $br-desktop) {
+      max-width: 238px;
+      line-height: 1.5;
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+    border-radius: 24px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+
+    @media screen and (min-width: $br-desktop) {
+      border-radius: 32px;
+      margin: 14px;
+      width: 219px;
+      height: 53px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+}

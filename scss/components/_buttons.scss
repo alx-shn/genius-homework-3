@@ -1,0 +1,17 @@
+.button {
+  font-family: inherit;
+  background-color: var(--color-primary-blue);
+  color: var(--color-primary-white);
+  border: 2px solid var(--color-primary-blue);
+  transition-duration: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-primary-dark);
+    background-color: transparent;
+  }
+
+  &:active {
+    transform: scale(0.99) translateY(1px);
+  }
+}

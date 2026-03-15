@@ -1,0 +1,114 @@
+.transformation-section {
+  padding-bottom: 104px;
+
+  @media screen and (min-width: $br-desktop) {
+    padding-bottom: 176px;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    gap: 32px;
+  }
+
+  &__title {
+    font-family: 'Play', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 400px;
+
+    @media screen and (min-width: $br-desktop) {
+      font-weight: 700;
+      font-size: 64px;
+      margin-bottom: 40px;
+      max-width: 529px;
+    }
+  }
+
+  &__text {
+    max-width: 320px;
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $br-desktop) {
+      max-width: 709px;
+      font-size: 22px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__no-margin {
+    margin-bottom: 0;
+  }
+
+  &__image1 {
+    display: none;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $br-desktop) {
+      display: block;
+      border-radius: 50%;
+      margin-right: 176px 40px 0;
+    }
+  }
+
+  &__image2 {
+    display: none;
+
+    @media screen and (min-width: $br-desktop) {
+      display: block;
+      border-radius: 50%;
+      margin-left: 176px;
+    }
+  }
+
+  &__transformation-stars {
+    position: absolute;
+
+    &--big {
+      fill: var(--color-secondary-dark-blue);
+      display: block;
+      width: 40px;
+      height: 40px;
+      bottom: -36px;
+      right: 2px; // переглянути , проблема з позиціонуванням іконки (великої зірочки)
+
+      @media screen and (min-width: $br-desktop) {
+        top: 336px;
+        left: 866px;
+        width: 64px;
+        height: 64px;
+      }
+    }
+
+    &--blue {
+      fill: var(--color-primary-blue);
+      display: none;
+
+      @media screen and (min-width: $br-desktop) {
+        display: block;
+        top: 0px;
+        right: 64px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &--little {
+      fill: var(--color-secondary-light-gray);
+      display: none;
+
+      @media screen and (min-width: $br-desktop) {
+        display: block;
+        top: 269px;
+        right: 6px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

@@ -1,30 +1,27 @@
 .hero-section {
-  background-image:
-    linear-gradient(
-      38deg,
-      #fff 0%,
-      rgba(255, 255, 255, 0.78) 31.23%,
-      rgba(255, 255, 255, 0.2) 50.39%,
-      rgba(255, 255, 255, 0) 68.37%
-    ),
-    url('../images/hero-section-background.png');
-
+  background-image: url('../images/hero-section-background-mobile.jpg');
+  width: 100%;
   background-repeat: no-repeat;
-  background-position: center top;
   background-size: cover;
-  padding: 71px 20px;
+  background-position: top;
 
   @media screen and (min-width: $br-desktop) {
-    background-image: url('../images/hero-section-background.png');
-    padding: 123px 0 126px 0;
+    background-image: url('../images/hero-section-background.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero-section-background@2x.jpg');
   }
 
   &__text {
-    margin: auto;
+    margin: 0 auto;
 
     @media screen and (min-width: $br-desktop) {
       margin-left: 106px;
       max-width: 529px;
+      padding: 123px 0 126px 0;
     }
   }
 
@@ -53,17 +50,16 @@
     font-family: 'Play', sans-serif;
     color: var(--color-primary-blue);
     text-transform: capitalize;
-
-    max-width: 100%;
+    width: 100%;
+    font-weight: 700;
     font-size: 54px;
     line-height: 0.8;
-    margin-bottom: 32px;
     text-align: center;
+    margin: 0 auto 32px;
 
     @media screen and (min-width: $br-desktop) {
       max-width: 529px;
       font-size: 140px;
-      font-weight: 700;
       margin-bottom: 40px;
       text-align: left;
     }

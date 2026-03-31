@@ -7,14 +7,16 @@
 
   &__container {
     position: relative;
-    width: 344px;
-    height: 456px;
+    width: 100%;
+    max-width: 320px;
+    height: 416px;
     padding: 32px 24px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border-radius: 4px 120px;
+    margin: 0 auto;
     background-image: linear-gradient(
       180deg,
       rgba(1, 28, 68, 0) 47.4%,
@@ -23,6 +25,8 @@
     );
 
     @media screen and (min-width: $br-desktop) {
+      width: 344px;
+      height: 456px;
     }
   }
 

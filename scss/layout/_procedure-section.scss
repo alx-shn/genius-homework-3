@@ -37,6 +37,9 @@
     display: none;
 
     @media screen and (min-width: $br-tablet) {
+      display: none;
+    }
+    @media screen and (min-width: $br-desktop) {
       display: flex;
     }
   }

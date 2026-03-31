@@ -1,7 +1,11 @@
 .wave {
   background-image: url('../images/background-wave.png');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: top;
-  // padding-top: 176px; // padding-bottom transformation-section згідно макету
+  background-size: cover;
+  padding-top: 140px;
+
+  @media screen and (min-width: $br-desktop) {
+    background-size: 100% 1550px;
+  }
 }

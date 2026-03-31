@@ -1,9 +1,5 @@
 .transformation-section {
-  padding-bottom: 104px;
-
-  @media screen and (min-width: $br-desktop) {
-    padding-bottom: 176px;
-  }
+  padding-bottom: 0;
 
   &__container {
     position: relative;

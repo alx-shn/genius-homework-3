@@ -12,6 +12,7 @@
   transition:
     opacity 1s,
     visibility 1s;
+  z-index: 1;
 
   &.is-hidden {
     opacity: 0;
@@ -26,18 +27,25 @@
   height: 100%;
   max-height: 516px;
   border-radius: 48px;
-  padding: 42px 17px;
+  padding: 30px 18px;
   background-image: url('../images/modal-background.png');
   background-color: var(--color-primary-dark-blue);
 
   @media screen and (min-width: $br-tablet) {
     width: 480px;
+    padding: 14px 18px;
   }
 
   @media screen and (min-width: $br-desktop) {
     width: 723px;
     max-height: 681px;
     padding: 42px 144px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/modal-background@2x.png');
   }
 
   &__btn-close {
@@ -77,9 +85,15 @@
     margin: 0 auto 20px;
     color: var(--color-primary-white);
 
+    @media screen and (min-width: $br-tablet) {
+      font-size: 42px;
+      max-width: 360px;
+      margin: 0 auto 10px;
+    }
     @media screen and (min-width: $br-desktop) {
-      font-weight: 700;
       font-size: 64px;
+      max-width: 435px;
+      font-weight: 700;
       margin: 0 auto 40px;
     }
   }

@@ -6,7 +6,7 @@ const swiper = new Swiper('.procedure-section__swiper-container', {
 
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1.9,
     },
     1280: {
       slidesPerView: 3,
